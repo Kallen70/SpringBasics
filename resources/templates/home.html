@@ -1,0 +1,33 @@
+<html>
+<body>
+<form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+
+<form action="/create-messages" method="post">
+    <input type="text" placeholder="Messages name" name="messagesName" width="200"/>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+
+
+    <form action="/delete" method="post">
+        <input type="text" placeholder="Delete #" name="deletemessagesName"/>
+        <button type="submit">Delete</button>
+    </form>
+
+
+
+
+
+<ol>
+    {{#messages}}
+    <li>{{messages}}</li>
+    {{/messages}}
+</ol>
+</body>
+</html>
+
